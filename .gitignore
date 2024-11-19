@@ -2,9 +2,12 @@
 
 # dependencies
 /node_modules
+/venv
+.idea
+tree.py
 /.pnp
 .pnp.js
-
+/instructions
 # testing
 /coverage
 

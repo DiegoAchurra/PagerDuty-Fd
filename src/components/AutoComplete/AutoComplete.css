@@ -1,0 +1,100 @@
+.autoComplete-container {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.autoComplete-label {
+  margin-bottom: 5px;
+}
+
+.autoComplete {
+  position: relative;
+  display: flex;
+}
+
+.input {
+  width: 100%; /* Input takes the full width */
+  padding: 10px 35px 10px 15px; /* Add padding-right to make space for the spinner */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  right: 10px; /* Align with input's right side */
+  width: 20px;
+  height: 20px;
+  margin-top: -10px; /* Half of spinner height to center */
+  border: 2px solid #ccc;
+  border-top-color: #007acc; /* Blue spinner */
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-matches {
+  padding: 10px 15px;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.suggestions {
+  position: absolute; /* Position the dropdown over the container */
+  top: 100%; /* Align the top of the dropdown with the bottom of the input */
+  left: 0;
+  width: 100%; /* Match the width of the parent */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px; /* Limit height */
+  overflow-y: auto; /* Add scrollbar if content overflows */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.suggestion {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.suggestion:hover {
+  background-color: #007acc; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+
