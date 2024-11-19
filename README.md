@@ -109,7 +109,6 @@ This project implements an AutoComplete component using React and TypeScript as 
    - My best practices include:
      - **Reusable Components**: Developing modular and reusable UI components to ensure maintainability and scalability.
      - **Consistency**: Strictly adhering to brandbooks to maintain a unified look and feel across different modules and pages.
-     - **Accessibility**: Incorporating ARIA roles and ensuring WCAG compliance for all components.
      - **Documentation**: Keeping a clear record of styles and component usage for easier onboarding and collaboration.
      - **Frameworks**: Leveraging tools like **Tailwind CSS** or **Bootstrap** as a base while customizing them to align with the design system.
 
