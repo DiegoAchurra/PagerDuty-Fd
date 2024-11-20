@@ -7,7 +7,6 @@
 tree.py
 /.pnp
 .pnp.js
-/instructions
 # testing
 /coverage
 
